@@ -1,0 +1,6 @@
+{
+  "name": "Keiyian Farmers Co-operative",
+  "description": "The official digital portal for Keiyian Farmers Co-operative Society in Trans Mara, Narok County, Kenya—supporting dairy, grain, input, and extension services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
