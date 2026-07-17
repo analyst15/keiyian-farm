@@ -79,6 +79,10 @@ export default function App() {
                   setActiveTab('services');
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
+                onContactClick={() => {
+                  setActiveTab('contact');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
               />
             )}
 

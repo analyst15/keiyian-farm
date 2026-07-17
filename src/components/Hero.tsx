@@ -5,24 +5,27 @@ interface HeroProps {
   onJoinClick: () => void;
   onPortalClick: () => void;
   onExploreServices: () => void;
+  onContactClick: () => void;
 }
 
-export default function Hero({ onJoinClick, onPortalClick, onExploreServices }: HeroProps) {
+export default function Hero({ onJoinClick, onPortalClick, onExploreServices, onContactClick }: HeroProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
       subtitle: "We are Producing Natural Products",
       title: "Agriculture.",
-      buttonText: "Discover More",
+      buttonText: "About Us",
       bg: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=2000",
       description: "Keiyian Farmers Co-operative connects local smallholders in Trans Mara to premium markets, securing clean cold-chain bulking for milk and central moisture-controlled silos for maize.",
-      onClick: onExploreServices,
+      onClick: () => {
+        document.getElementById('about-section')?.scrollIntoView({ behavior: 'smooth' });
+      },
     },
     {
       subtitle: "State-of-the-art Cold Chain Bulking",
       title: "Dairy Co-op.",
-      buttonText: "Explore Milk Payouts",
+      buttonText: "Our Services",
       bg: "https://images.unsplash.com/photo-1596733430284-f7437764b1a9?auto=format&fit=crop&q=80&w=2000",
       description: "Delivering over 14,000 Litres of Grade-A chilled milk daily. Our state-of-the-art bulking coolers preserve high butterfat quality for major milk processing companies.",
       onClick: onExploreServices,
@@ -30,10 +33,10 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices }: 
     {
       subtitle: "Direct High-Yield Aggregated Grains",
       title: "Bulk Grain.",
-      buttonText: "View Wholesale Silos",
+      buttonText: "Contact Us",
       bg: "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&q=80&w=2000",
       description: "Aggregating clean, low-moisture white maize and high-yield red sorghum directly from small-scale farms to meet major industrial procurement specifications.",
-      onClick: onPortalClick,
+      onClick: onContactClick,
     }
   ];
 

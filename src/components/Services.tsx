@@ -7,7 +7,7 @@ export default function Services() {
       title: 'Dairy Collection & Marketing',
       description: 'We collect, process, and market quality milk while ensuring farmers receive fair and competitive prices.',
       icon: <Milk className="h-6 w-6" />,
-      image: 'https://images.unsplash.com/photo-1527156279145-8860c5727563?auto=format&fit=crop&q=80&w=600'
+      image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=600'
     },
     {
       id: 'srv-2',

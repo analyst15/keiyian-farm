@@ -233,16 +233,9 @@ export default function Header({
                       </a>
                     </div>
 
-                    <div className="bg-stone-50 p-2 rounded-xl border border-stone-100 text-xs">
-                      <span className="text-[10px] text-stone-400 font-bold block uppercase font-mono">Veterinary Helpline (24/7)</span>
-                      <a href="tel:+254799111222" className="font-extrabold text-stone-850 hover:text-emerald-700 transition-colors block mt-0.5 font-mono">
-                        📞 +254 799 111 222
-                      </a>
-                    </div>
-
                     {/* Member Quick-Access Button inside Dropdown */}
-                    <div className="pt-2">
-                      {loggedInFarmer ? (
+                    {loggedInFarmer && (
+                      <div className="pt-2">
                         <div className="space-y-2">
                           <div className="text-xs bg-emerald-50 text-emerald-800 p-2.5 rounded-lg border border-emerald-100 font-medium">
                             🧑‍🌾 Signed in as <strong className="font-bold">{loggedInFarmer.name}</strong>
@@ -259,31 +252,8 @@ export default function Header({
                             <span>Log Out of System</span>
                           </button>
                         </div>
-                      ) : (
-                        <div className="space-y-1.5">
-                          <button
-                            onClick={() => {
-                              setShowSupport(false);
-                              setErrorMsg('');
-                              setShowLoginModal(true);
-                            }}
-                            className="w-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 rounded-lg shadow-sm transition-all flex items-center justify-center space-x-1"
-                          >
-                            <LogIn className="h-3.5 w-3.5" />
-                            <span>Sign In to Member Portal</span>
-                          </button>
-                          <button
-                            onClick={() => {
-                              setShowSupport(false);
-                              onOpenRegister();
-                            }}
-                            className="w-full border border-stone-200 hover:bg-stone-50 text-stone-600 text-xs font-bold py-2.5 rounded-lg transition-all"
-                          >
-                            Apply for Co-op Card
-                          </button>
-                        </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -412,29 +382,7 @@ export default function Header({
                   Log Out
                 </button>
               </div>
-            ) : (
-              <div className="space-y-2.5 px-1">
-                <button
-                  onClick={() => {
-                    setIsOpen(false);
-                    onOpenRegister();
-                  }}
-                  className="block w-full text-center border border-emerald-600 hover:bg-emerald-50 text-emerald-700 py-3 rounded-xl text-sm font-bold"
-                >
-                  Apply for Co-op Membership
-                </button>
-                <button
-                  onClick={() => {
-                    setIsOpen(false);
-                    setErrorMsg('');
-                    setShowLoginModal(true);
-                  }}
-                  className="block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-xl text-sm font-bold shadow-sm"
-                >
-                  Sign In to Member Portal
-                </button>
-              </div>
-            )}
+            ) : null}
           </div>
         </div>
       )}
