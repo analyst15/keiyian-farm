@@ -84,6 +84,17 @@ export default function Footer({ setActiveTab }: FooterProps) {
               <li>
                 <button 
                   onClick={() => {
+                    setActiveTab('gallery');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }} 
+                  className="hover:text-emerald-400 transition-colors text-left"
+                >
+                  Gallery
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => {
                     setActiveTab('contact');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }} 

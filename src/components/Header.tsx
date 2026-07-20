@@ -71,6 +71,7 @@ export default function Header({
     { id: 'about-us', label: 'About Us', type: 'scroll', targetId: 'about-section' },
     { id: 'why-choose-us', label: 'Why Choose Us', type: 'scroll', targetId: 'why-choose-section' },
     { id: 'our-services', label: 'Our Services', type: 'tab', value: 'services' },
+    { id: 'gallery', label: 'Gallery', type: 'tab', value: 'gallery' },
     { id: 'contact-us', label: 'Contact Us', type: 'tab', value: 'contact' },
   ];
 
@@ -231,6 +232,18 @@ export default function Header({
                       <a href="tel:+254721346564" className="font-extrabold text-stone-850 hover:text-emerald-700 transition-colors block mt-0.5 font-mono">
                         📞 +254 721 346564
                       </a>
+                    </div>
+
+                    <div className="pt-1">
+                      <button
+                        onClick={() => {
+                          onOpenRegister();
+                          setShowSupport(false);
+                        }}
+                        className="w-full bg-[#246A1A] hover:bg-[#1b5014] text-white text-xs font-extrabold py-2.5 rounded-xl transition-all shadow-sm flex items-center justify-center space-x-1.5 cursor-pointer"
+                      >
+                        <span>Become a Member</span>
+                      </button>
                     </div>
 
                     {/* Member Quick-Access Button inside Dropdown */}

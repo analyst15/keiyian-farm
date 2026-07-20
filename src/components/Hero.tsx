@@ -219,20 +219,22 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
             {/* Background solid gold accent block */}
             <div className="absolute top-16 right-0 w-[85%] h-[82%] bg-[#EBB914] rounded-2xl -z-10 shadow-lg transform translate-x-2 translate-y-2 opacity-95" />
 
-            {/* Main large image (greenhouse farmer working, beautiful smile) */}
+            {/* Main large image (Tea Harvesting Demonstration) */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[3/4] w-[88%] mr-auto">
               <img
-                src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&q=80&w=800"
-                alt="Kenyan greenhouse agriculture"
+                src="https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F482205686_959817576299768_6625594529938376275_n.jpg?alt=media&token=579e099a-08c6-44f0-8280-15ce64ba47e9"
+                alt="Keiyian Farmers Tea Harvesting Demonstration"
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
 
-            {/* Smaller secondary overlapping image (tractor or crops) */}
+            {/* Smaller secondary overlapping image (Sahiwal Breeding Cattle) */}
             <div className="absolute bottom-0 right-0 w-[55%] aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white z-10 hidden sm:block">
               <img
-                src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80&w=800"
-                alt="Fresh farm crops harvesting"
+                src="https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484011154_959145109700348_6229700170874551040_n.jpg?alt=media&token=87b2eb4b-bbc9-4a2d-a403-8403dfea184a"
+                alt="Sahiwal Breeding Cattle"
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>

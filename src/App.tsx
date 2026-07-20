@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import FarmerPortal from './components/FarmerPortal';
 import RegistrationForm from './components/RegistrationForm';
@@ -11,9 +12,38 @@ import { Farmer } from './types';
 import { User, LogIn, CreditCard } from 'lucide-react';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<string>('home');
+  const [activeTab, setActiveTab] = useState<string>(() => {
+    const path = window.location.pathname;
+    if (path === '/gallery') return 'gallery';
+    if (path === '/services') return 'services';
+    if (path === '/contact') return 'contact';
+    if (path === '/portal') return 'portal';
+    if (path === '/shop') return 'shop';
+    return 'home';
+  });
   const [loggedInFarmer, setLoggedInFarmer] = useState<Farmer | null>(null);
   const [showRegisterForm, setShowRegisterForm] = useState<boolean>(false);
+
+  useEffect(() => {
+    const path = activeTab === 'home' ? '/' : `/${activeTab}`;
+    if (window.location.pathname !== path) {
+      window.history.pushState(null, '', path);
+    }
+  }, [activeTab]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      if (path === '/gallery') setActiveTab('gallery');
+      else if (path === '/services') setActiveTab('services');
+      else if (path === '/contact') setActiveTab('contact');
+      else if (path === '/portal') setActiveTab('portal');
+      else if (path === '/shop') setActiveTab('shop');
+      else setActiveTab('home');
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const handleLogin = (farmer: Farmer | null) => {
     setLoggedInFarmer(farmer);
@@ -139,6 +169,7 @@ export default function App() {
             )}
 
             {activeTab === 'shop' && <Marketplace />}
+            {activeTab === 'gallery' && <Gallery />}
             {activeTab === 'contact' && <Contact />}
           </>
         )}
