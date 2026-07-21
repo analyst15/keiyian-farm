@@ -237,12 +237,13 @@ export default function Header({
                     <div className="pt-1">
                       <button
                         onClick={() => {
-                          onOpenRegister();
+                          setActiveTab('contact');
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
                           setShowSupport(false);
                         }}
                         className="w-full bg-[#246A1A] hover:bg-[#1b5014] text-white text-xs font-extrabold py-2.5 rounded-xl transition-all shadow-sm flex items-center justify-center space-x-1.5 cursor-pointer"
                       >
-                        <span>Become a Member</span>
+                        <span>Contact Us</span>
                       </button>
                     </div>
 

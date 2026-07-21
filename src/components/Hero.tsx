@@ -188,7 +188,7 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
 
             <div className="space-y-4 text-stone-600 text-sm sm:text-base leading-relaxed max-w-2xl font-medium">
               <p>
-                Our cooperative provides members with access to quality farming services, milk collection, agricultural training, livestock improvement programs, affordable farm inputs, financial opportunities, and better market access.
+                Our cooperative provides farmers with access to quality farming services, milk collection, agricultural training, livestock improvement programs, affordable farm inputs, financial opportunities, and better market access.
               </p>
               <p>
                 By working together, we help farmers increase productivity, improve incomes, and create sustainable livelihoods for future generations.
@@ -312,7 +312,7 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
             Our Core Values
           </h2>
           <p className="text-sm text-stone-500 max-w-lg mx-auto">
-            These foundational pillars guide our decisions, support our community, and drive sustainable growth for all Keiyian members.
+            These foundational pillars guide our decisions, support our community, and drive sustainable growth for all Keiyian farmers.
           </p>
           <div className="flex justify-center pt-2">
             <span className="h-1 w-16 bg-[#EBB914] rounded-full" />
@@ -377,7 +377,7 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
               Community
             </h4>
             <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-medium">
-              Our success contributes to the wellbeing of every member and the entire community.
+              Our success contributes to the wellbeing of every farmer and the entire community.
             </p>
           </div>
 
@@ -408,7 +408,7 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
             {/* Right Col: Bullet Grid */}
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
-                "Member-owned and managed",
+                "Farmer-owned and managed",
                 "Fair and transparent pricing",
                 "Reliable milk collection services",
                 "Professional agricultural support",
@@ -431,16 +431,16 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
         </div>
       </section>
 
-      {/* Membership Section */}
+      {/* Partnership & Support Section */}
       <section className="bg-stone-100/50 border-t border-stone-200/50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <span className="text-emerald-700 font-extrabold tracking-wider text-xs uppercase block font-mono">
-              Membership
+              Partner with Us
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-stone-900 leading-tight uppercase font-sans">
-              Join Keiyian Farmers Cooperative Society Ltd
+              Partner with Keiyian Farmers Cooperative Society Ltd
             </h2>
             <p className="text-sm sm:text-base text-stone-500 max-w-xl mx-auto leading-relaxed">
               Become part of a growing community dedicated to improving agriculture and creating lasting prosperity.
@@ -452,11 +452,11 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            {/* Membership Benefits Card */}
+            {/* Cooperative Benefits Card */}
             <div className="lg:col-span-6 bg-white rounded-2xl shadow-md border border-stone-200/60 p-8 sm:p-10 flex flex-col justify-between">
               <div className="space-y-6">
                 <h3 className="text-xl sm:text-2xl font-black text-stone-900 tracking-tight uppercase font-sans border-b border-stone-100 pb-3">
-                  Membership Benefits
+                  Cooperative Benefits
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
@@ -465,7 +465,7 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
                     "Agricultural training",
                     "Veterinary support",
                     "Financial empowerment",
-                    "Cooperative dividends",
+                    "Cooperative growth",
                     "Networking with fellow farmers",
                     "Increased productivity"
                   ].map((benefit, idx) => (
@@ -478,14 +478,14 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
               </div>
             </div>
 
-            {/* Who Can Join? Card */}
+            {/* Who Can Partner? Card */}
             <div className="lg:col-span-6 bg-white rounded-2xl shadow-md border border-stone-200/60 p-8 sm:p-10 flex flex-col justify-between">
               <div className="space-y-6">
                 <h3 className="text-xl sm:text-2xl font-black text-stone-900 tracking-tight uppercase font-sans border-b border-stone-100 pb-3">
-                  Who Can Join?
+                  Who Can Partner?
                 </h3>
                 <p className="text-stone-500 text-xs sm:text-sm font-extrabold tracking-wide uppercase">
-                  Membership is open to:
+                  Cooperative support is open to:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
@@ -512,21 +512,18 @@ export default function Hero({ onJoinClick, onPortalClick, onExploreServices, on
             {/* Background pattern */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.15),transparent_40%)]" />
             <div className="relative z-10 max-w-2xl mx-auto space-y-6">
-              <span className="text-[#EBB914] font-mono text-xs font-black tracking-widest uppercase block">
-                Call to Action
-              </span>
               <h3 className="text-2xl sm:text-4xl font-black tracking-tight uppercase font-sans">
-                Become a Member Today
+                Contact Keiyian Farmers Today
               </h3>
               <p className="text-sm sm:text-base text-stone-300 max-w-md mx-auto leading-relaxed">
-                Take the first step to securing premium pricing, sustainable support, and cooperative dividends.
+                Take the first step to securing premium pricing, sustainable support, and cooperative growth.
               </p>
               <div className="pt-4 flex justify-center">
                 <button
-                  onClick={onJoinClick}
+                  onClick={onContactClick}
                   className="bg-[#EBB914] hover:bg-[#d6a50f] text-stone-950 font-sans font-black uppercase text-xs tracking-widest px-10 py-4.5 rounded-full flex items-center justify-center space-x-3 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105"
                 >
-                  <span>Apply Online Now</span>
+                  <span>Contact Us Now</span>
                   <ArrowRight className="h-4 w-4" />
                 </button>
               </div>

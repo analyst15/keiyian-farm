@@ -34,7 +34,7 @@ export default function Gallery() {
   {
     "id": "gal-1",
     "title": "Tea Harvesting Demonstration",
-    "description": "Cooperative extension officers showing members the standard two-leaves-and-a-bud pluck method for premium tea yield.",
+    "description": "Cooperative extension officers showing farmers the standard two-leaves-and-a-bud pluck method for premium tea yield.",
     "category": "tea",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F482205686_959817576299768_6625594529938376275_n.jpg?alt=media&token=579e099a-08c6-44f0-8280-15ce64ba47e9",
     "location": "Keiyian Tea Fields",
@@ -43,7 +43,7 @@ export default function Gallery() {
   {
     "id": "gal-2",
     "title": "Tea Harvesting",
-    "description": "Members carefully hand-picking tea leaves in our high-altitude, nutrient-rich volcanic soil fields.",
+    "description": "Farmers carefully hand-picking tea leaves in our high-altitude, nutrient-rich volcanic soil fields.",
     "category": "tea",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F482216285_961450759469783_7552501359579966155_n.jpg?alt=media&token=bead2132-cdf3-4e99-bc5d-ad3f71273864",
     "location": "Trans Mara Outgrower Area",
@@ -105,7 +105,7 @@ export default function Gallery() {
   },
   {
     "id": "gal-9",
-    "title": "Member Training Session",
+    "title": "Farmer Training Session",
     "description": "Cooperative agronomists training local farmers on efficient, sustainable land management practices.",
     "category": "community",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F483522601_962887189326140_9109718782298177099_n.jpg?alt=media&token=f19ebeb6-7146-48a2-a9cd-c9f403e1db05",
@@ -151,7 +151,7 @@ export default function Gallery() {
   {
     "id": "gal-14",
     "title": "Keiyian Fiti Probiotic Yoghurt",
-    "description": "Our certified, highly popular probiotic yogurt produced directly from member-supplied quality milk.",
+    "description": "Our certified, highly popular probiotic yogurt produced directly from farmer-supplied quality milk.",
     "category": "dairy",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484035704_959700909644768_271133928789454720_n.jpg?alt=media&token=83d27701-b9d1-4864-ba3f-436b5df7ea5d",
     "location": "Keiyian Dairy Plant",
@@ -169,7 +169,7 @@ export default function Gallery() {
   {
     "id": "gal-16",
     "title": "Subsidized Heavy Tractor",
-    "description": "Subsidized modern farming mechanization assets, helping members with modern seedbed preparation.",
+    "description": "Subsidized modern farming mechanization assets, helping farmers with modern seedbed preparation.",
     "category": "facilities",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484150131_961306306150895_3893587077141575476_n.jpg?alt=media&token=eafa8b1c-07c8-40b8-b489-314ee4db9b59",
     "location": "Central Machinery Yard",
@@ -178,7 +178,7 @@ export default function Gallery() {
   {
     "id": "gal-17",
     "title": "Farmers Meeting",
-    "description": "Warm interactive discussion between cooperative management and grassroot farmer members.",
+    "description": "Warm interactive discussion between cooperative management and grassroot farmers.",
     "category": "community",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484167123_962889459325913_2821419252264184392_n.jpg?alt=media&token=cf3399e6-ff6a-4acc-956c-bb95e75194c8",
     "location": "Highland Outreach Post",
@@ -186,8 +186,8 @@ export default function Gallery() {
   },
   {
     "id": "gal-18",
-    "title": "Member Training Session",
-    "description": "Hands-on agricultural experts teaching members optimized dairy yield and modern pest control.",
+    "title": "Farmer Training Session",
+    "description": "Hands-on agricultural experts teaching farmers optimized dairy yield and modern pest control.",
     "category": "community",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484210617_962634282684764_7277036304859513255_n.jpg?alt=media&token=f3d69e13-c0f8-4cb3-ac3e-a03d91aa80c1",
     "location": "Trans Mara Training Hub",
@@ -241,7 +241,7 @@ export default function Gallery() {
   {
     "id": "gal-24",
     "title": "Tea Plantation Workers",
-    "description": "Dedicated team members cultivating premium quality tea leaves in the early mist of Trans Mara.",
+    "description": "Dedicated farmers cultivating premium quality tea leaves in the early mist of Trans Mara.",
     "category": "tea",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484587712_962857922662400_3387558892608416137_n.jpg?alt=media&token=cae3f6e3-9163-4248-8bd6-2d9f151957a7",
     "location": "Keiyian tea zones",
@@ -250,7 +250,7 @@ export default function Gallery() {
   {
     "id": "gal-25",
     "title": "Cattle Herd Trekking",
-    "description": "Members guiding herds along historical watering trails in the savanna plains.",
+    "description": "Farmers guiding herds along historical watering trails in the savanna plains.",
     "category": "dairy",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484656882_966190635662462_4834501372997270003_n.jpg?alt=media&token=e8dc01ee-709d-4536-992c-3ca39cc26c6b",
     "location": "Keiyian Savanna",
@@ -330,7 +330,7 @@ export default function Gallery() {
   },
   {
     "id": "gal-34",
-    "title": "Co-operative Member Meeting",
+    "title": "Co-operative Farmer Meeting",
     "description": "Democratic co-op structure in action with community dialogue, feedback, and strategic dairy reviews.",
     "category": "community",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F484988543_962887515992774_260526343612743988_n.jpg?alt=media&token=869eb22a-eb63-4a44-9703-cf32841ef60c",
@@ -358,7 +358,7 @@ export default function Gallery() {
   {
     "id": "gal-37",
     "title": "Red Zebu Cattle",
-    "description": "Indigenous drought-resilient Red Zebu cattle raised sustainably by our dryland pastoralist members.",
+    "description": "Indigenous drought-resilient Red Zebu cattle raised sustainably by our dryland pastoralists.",
     "category": "dairy",
     "image": "https://firebasestorage.googleapis.com/v0/b/keiyian-farm.firebasestorage.app/o/Gallery%2F485347781_969225058692353_7000103842542568174_n.jpg?alt=media&token=65c138fa-22b5-4c3f-a1fc-1b3e7b8ee244",
     "location": "Southern Savanna Zone",
