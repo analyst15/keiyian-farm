@@ -139,6 +139,15 @@ export default function Footer({ setActiveTab }: FooterProps) {
         </div>
         <div className="flex items-center space-x-4 border-t border-stone-800/20 pt-4 sm:border-0 sm:pt-0">
           <span className="text-3xs">Narok Cooperative Board</span>
+          <span className="text-stone-700">|</span>
+          <a
+            href="https://techninja.co.ke/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-400 hover:text-stone-400 transition-colors font-normal cursor-pointer"
+          >
+            Website by Tech Ninja
+          </a>
         </div>
       </div>
 
